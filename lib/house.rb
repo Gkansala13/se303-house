@@ -7,6 +7,8 @@ class House
     when 2
       "This is the malt that lay in the house that Jack built.\n"
     end 
+  when 3
+    "This is the rat that ate the malt that lay in the house that Jack built.\n"
   end
 end
 
