@@ -1,13 +1,16 @@
 class House
 
-  def lyrics
-    "the house that Jack built.\n"
+  def lyrics(number)
+    case number
+    when 1
+      "the house that Jack built.\n"
+    end
   end
 
   def line(number)
     case number
     when 1
-      "This is #{lyrics}"
+      "This is #{lyrics(number)}"
     when 2
       "This is the malt that lay in the house that Jack built.\n"
     when 3
