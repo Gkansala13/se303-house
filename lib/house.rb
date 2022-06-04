@@ -1,9 +1,13 @@
 class House
 
+  def lyrics
+    "the house that Jack built.\n"
+  end
+
   def line(number)
     case number
     when 1
-      "This is the house that Jack built.\n"
+      "This is #{lyrics}"
     when 2
       "This is the malt that lay in the house that Jack built.\n"
     when 3
@@ -32,5 +36,5 @@ class House
   def recite 
     1.upto(12).map { |number| line(number) }.join("\n")
   end
-   
+
 end
