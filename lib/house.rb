@@ -3,7 +3,7 @@ class House
   def lyrics(number)
     case number
     when 1
-      "the house that Jack built.\n"
+      SONG_PHRASES[number-1]
     when 2
       "the malt that lay in #{lyrics(number-1)}"
     when 3
