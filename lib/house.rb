@@ -30,11 +30,15 @@ class House
   end
 
   def line(number)
-    "This is #{lyrics(number)}the house that Jack built.\n"
+    "#{start_phrase}#{lyrics(number)}the house that Jack built.\n"
   end
 
   def recite 
     1.upto(12).map { |number| line(number) }.join("\n")
+  end
+
+  def start_phrase
+    "This is "
   end
 
 end
