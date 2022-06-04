@@ -3,9 +3,9 @@ class House
   def lyrics(number)
     case number
     when 1
-      ""
+      "the house that Jack built.\n"
     when 2
-      "the malt that lay in "
+      "the malt that lay in #{lyrics(number-1)}"
     when 3
       "the rat that ate #{lyrics(number-1)}"
     when 4
@@ -30,7 +30,7 @@ class House
   end
 
   def line(number)
-    "#{start_phrase}#{lyrics(number)}the house that Jack built.\n"
+    "#{start_phrase}#{lyrics(number)}"
   end
 
   def recite 
