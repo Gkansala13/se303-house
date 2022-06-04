@@ -7,7 +7,7 @@ class House
     when 2
       SONG_PHRASES[number-1] + lyrics(number-1)
     when 3
-      "the rat that ate #{lyrics(number-1)}"
+      SONG_PHRASES[number-1] + lyrics(number-1)
     when 4
       "the cat that killed #{lyrics(number-1)}"
     when 5 
