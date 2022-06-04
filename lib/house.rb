@@ -9,7 +9,7 @@ class House
     when 3
       "the rat that ate the malt that lay in "
     when 4
-      "the cat that killed the rat that ate the malt that lay in "
+      "the cat that killed #{lyrics(number-1)}"
     when 5 
       "the dog that worried #{lyrics(number-1)}"
     when 6
