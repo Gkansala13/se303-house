@@ -25,7 +25,7 @@ class House
     when 11
       SONG_PHRASES[number-1] + lyrics(number-1)
     else
-      "the horse and the hound and the horn that belonged to #{lyrics(number-1)}"
+      SONG_PHRASES[number-1] + lyrics(number-1)
     end
   end
 
