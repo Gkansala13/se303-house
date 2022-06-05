@@ -15,7 +15,7 @@ class House
     when 6
       SONG_PHRASES[number-1] + lyrics(number-1)
     when 7
-      "the maiden all forlorn that milked #{lyrics(number-1)}"
+      SONG_PHRASES[number-1] + lyrics(number-1)
     when 8
       "the man all tattered and torn that kissed #{lyrics(number-1)}"
     when 9
