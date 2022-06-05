@@ -1,5 +1,13 @@
 class House
 
+  def line(number)
+    "#{starting_phrase} #{lyrics(number)}"
+  end
+
+  def recite 
+    1.upto(12).map { |number| line(number) }.join("\n")
+  end
+
   def lyrics(number)
     SONG_PHRASES[0...number].reverse.join(" ")
   end
@@ -10,16 +18,8 @@ class House
   "the priest all shaven and shorn that married","the rooster that crowed in the morn that woke",
   "the farmer sowing his corn that kept","the horse and the hound and the horn that belonged to"]
 
-  def line(number)
-    "#{start_phrase}#{lyrics(number)}"
-  end
-
-  def recite 
-    1.upto(12).map { |number| line(number) }.join("\n")
-  end
-
-  def start_phrase
-    "This is "
+  def starting_phrase
+    "This is"
   end
 
 end
