@@ -13,7 +13,7 @@ class House
     when 5 
       SONG_PHRASES[number-1] + lyrics(number-1)
     when 6
-      "the cow with the crumpled horn that tossed #{lyrics(number-1)}"
+      SONG_PHRASES[number-1] + lyrics(number-1)
     when 7
       "the maiden all forlorn that milked #{lyrics(number-1)}"
     when 8
