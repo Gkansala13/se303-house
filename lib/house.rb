@@ -1,29 +1,8 @@
 class House
 
   def lyrics(number)
-    case number
-    when 1
+    if number==1
       SONG_PHRASES[number-1]
-    when 2
-      SONG_PHRASES[number-1] + lyrics(number-1)
-    when 3
-      SONG_PHRASES[number-1] + lyrics(number-1)
-    when 4
-      SONG_PHRASES[number-1] + lyrics(number-1)    
-    when 5 
-      SONG_PHRASES[number-1] + lyrics(number-1)
-    when 6
-      SONG_PHRASES[number-1] + lyrics(number-1)
-    when 7
-      SONG_PHRASES[number-1] + lyrics(number-1)
-    when 8
-      SONG_PHRASES[number-1] + lyrics(number-1)
-    when 9
-      SONG_PHRASES[number-1] + lyrics(number-1)
-    when 10 
-      SONG_PHRASES[number-1] + lyrics(number-1)
-    when 11
-      SONG_PHRASES[number-1] + lyrics(number-1)
     else
       SONG_PHRASES[number-1] + lyrics(number-1)
     end
