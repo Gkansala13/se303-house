@@ -122,5 +122,11 @@ Thar be the horse and the hound and the horn that belonged to the farmer sowing 
 TEXT
     assert_equal expected, PirateHouse.new.recite
   end
+
+  def test_random_house_version
+    refute_equal RandomHouse.new.recite, House.new.recite
+    expected = "This is the house that Jack built.\n"
+    assert_equal expected, RandomHouse.new.line(1)
+  end
   
 end

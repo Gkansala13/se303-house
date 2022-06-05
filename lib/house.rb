@@ -33,6 +33,5 @@ class PirateHouse < House
 end
 
 class RandomHouse < House 
-
+  
 end 
-
