@@ -128,5 +128,4 @@ TEXT
     expected = "This is the house that Jack built.\n"
     assert_equal expected, RandomHouse.new.line(1)
   end
-  
 end

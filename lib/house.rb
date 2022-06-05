@@ -33,5 +33,7 @@ class PirateHouse < House
 end
 
 class RandomHouse < House 
-  
+  def lyrics(number)
+    SONG_PHRASES[1...number].shuffle.insert(0,"the house that Jack built.\n").reverse.join(" ")
+  end
 end 
