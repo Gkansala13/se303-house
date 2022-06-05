@@ -23,7 +23,7 @@ class House
     when 10 
       SONG_PHRASES[number-1] + lyrics(number-1)
     when 11
-      "the farmer sowing his corn that kept #{lyrics(number-1)}"
+      SONG_PHRASES[number-1] + lyrics(number-1)
     else
       "the horse and the hound and the horn that belonged to #{lyrics(number-1)}"
     end
