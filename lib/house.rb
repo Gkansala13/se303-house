@@ -1,11 +1,7 @@
 class House
 
   def lyrics(number)
-    if number==1
-      SONG_PHRASES[number-1]
-    else
-      SONG_PHRASES[number-1] + lyrics(number-1)
-    end
+    SONG_PHRASES[0...number].reverse.join("")
   end
 
   SONG_PHRASES=["the house that Jack built.\n","the malt that lay in ","the rat that ate ",
