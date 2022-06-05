@@ -11,7 +11,7 @@ class House
     when 4
       SONG_PHRASES[number-1] + lyrics(number-1)    
     when 5 
-      "the dog that worried #{lyrics(number-1)}"
+      SONG_PHRASES[number-1] + lyrics(number-1)
     when 6
       "the cow with the crumpled horn that tossed #{lyrics(number-1)}"
     when 7
