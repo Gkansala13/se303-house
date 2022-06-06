@@ -27,7 +27,7 @@ class House
     ["","#{song_subject[0]} #{song_verb[0]}","#{song_subject[1]} #{song_verb[1]}",
     "#{song_subject[2]} #{song_verb[2]}","#{song_subject[3]} #{song_verb[3]}","#{song_subject[4]} #{song_verb[4]}",
     "#{song_subject[5]} #{song_verb[5]}","#{song_subject[6]} #{song_verb[6]}",
-    "#{song_subject[7]} #{song_verb[7]}","the rooster that crowed in the morn that woke",
+    "#{song_subject[7]} #{song_verb[7]}","#{song_subject[8]} #{song_verb[8]}",
     "the farmer sowing his corn that kept","the horse and the hound and the horn that belonged to"] 
   end
 
