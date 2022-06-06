@@ -28,7 +28,7 @@ class House
     "#{song_subject[2]} #{song_verb[2]}","#{song_subject[3]} #{song_verb[3]}","#{song_subject[4]} #{song_verb[4]}",
     "#{song_subject[5]} #{song_verb[5]}","#{song_subject[6]} #{song_verb[6]}",
     "#{song_subject[7]} #{song_verb[7]}","#{song_subject[8]} #{song_verb[8]}",
-    "#{song_subject[9]} #{song_verb[9]}","the horse and the hound and the horn that belonged to"] 
+    "#{song_subject[9]} #{song_verb[9]}","#{song_subject[10]} #{song_verb[10]}"] 
   end
 
   def starting_phrase
