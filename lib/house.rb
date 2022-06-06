@@ -1,5 +1,7 @@
 class House
 
+  RANDOM_SEED = rand(1..100)
+
   def line(number)
     "#{starting_phrase} #{lyrics(number)}the house that Jack built.\n"
   end
@@ -24,7 +26,7 @@ class House
   end
 
   def song_phrase
-    (0...11).map { |i| "#{song_subject[i]} #{song_verb[i]}"}.insert(0,"")
+    song_phrase=(0...11).map { |i| "#{song_subject[i]} #{song_verb[i]}"}.insert(0,'')
   end
 
   def starting_phrase
@@ -32,7 +34,7 @@ class House
   end
   
 end
-
+ 
 
 class PirateHouse < House
 
@@ -44,18 +46,35 @@ end
 
 
 class RandomHouse < House 
-  
-  def lyrics(number)
-    song_phrase[1...number].shuffle.reverse.join(" ")
+
+  def song_phrase
+    super[1..].shuffle(random: Random.new(RANDOM_SEED)).insert(0,'')
   end
 
 end 
 
 
-class RandomPirateHouse < RandomHouse
+class RandomPirateHouse < House
+
+  def song_phrase
+    super[1..].shuffle(random: Random.new(RANDOM_SEED)).insert(0,'')
+  end
 
   def starting_phrase
     "Thar be"
   end
 
 end 
+
+
+class RandomVerbSubjectHouse < House
+  
+  def song_subject
+    super.shuffle(random: Random.new(RANDOM_SEED))
+  end
+
+  def song_verb
+    super.shuffle(random: Random.new(RANDOM_SEED))
+  end
+
+end
