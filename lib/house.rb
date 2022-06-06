@@ -41,4 +41,8 @@ end
 
 class RandomPirateHouse < RandomHouse
 
+  def starting_phrase
+    "Thar be"
+  end
+
 end 
