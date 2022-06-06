@@ -25,7 +25,7 @@ class House
 
   def song_phrase
     ["","#{song_subject[0]} #{song_verb[0]}","#{song_subject[1]} #{song_verb[1]}",
-    "#{song_subject[2]} #{song_verb[2]}","#{song_subject[3]} #{song_verb[3]}","the cow with the crumpled horn that tossed",
+    "#{song_subject[2]} #{song_verb[2]}","#{song_subject[3]} #{song_verb[3]}","#{song_subject[4]} #{song_verb[4]}",
     "the maiden all forlorn that milked","the man all tattered and torn that kissed",
     "the priest all shaven and shorn that married","the rooster that crowed in the morn that woke",
     "the farmer sowing his corn that kept","the horse and the hound and the horn that belonged to"] 
