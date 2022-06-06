@@ -18,6 +18,10 @@ class House
   "the priest all shaven and shorn that married","the rooster that crowed in the morn that woke",
   "the farmer sowing his corn that kept","the horse and the hound and the horn that belonged to"]  
   
+  
+  SONG_SUBJECTS=["the malt","the rat","the cat","the dog","the cow","the maiden",
+  "the man","the priest","the rooster","the farmer","the horse"]
+
   def starting_phrase
     "This is"
   end
@@ -39,7 +43,7 @@ class RandomHouse < House
   def lyrics(number)
     SONG_PHRASES[1...number].shuffle.reverse.join(" ")
   end
-  
+
 end 
 
 
