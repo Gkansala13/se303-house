@@ -24,7 +24,7 @@ class House
   end
 
   def song_phrase
-    ["","the malt that lay in","the rat that ate",
+    ["","#{song_subject[0]} #{song_verbs[0]}","the rat that ate",
     "the cat that killed","the dog that worried","the cow with the crumpled horn that tossed",
     "the maiden all forlorn that milked","the man all tattered and torn that kissed",
     "the priest all shaven and shorn that married","the rooster that crowed in the morn that woke",
