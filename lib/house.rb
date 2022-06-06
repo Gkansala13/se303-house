@@ -18,9 +18,12 @@ class House
   "the priest all shaven and shorn that married","the rooster that crowed in the morn that woke",
   "the farmer sowing his corn that kept","the horse and the hound and the horn that belonged to"]  
   
-  
   SONG_SUBJECTS=["the malt","the rat","the cat","the dog","the cow","the maiden",
   "the man","the priest","the rooster","the farmer","the horse"]
+
+  SONG_VERBS =  ["that lay in","that ate","that killed","that worried","with the crumpled horn that tossed",
+  "all forlorn that milked","all tattered and torn that kissed","all shaven and shorn that married",
+  "that crowed in the morn that woke","sowing his corn that kept","and the hound and the horn that belonged to"]
 
   def starting_phrase
     "This is"
