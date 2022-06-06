@@ -17,14 +17,14 @@ class House
     "the man","the priest","the rooster","the farmer","the horse"]
     end
 
-  def song_verbs 
+  def song_verb 
     ["that lay in","that ate","that killed","that worried","with the crumpled horn that tossed",
     "all forlorn that milked","all tattered and torn that kissed","all shaven and shorn that married",
     "that crowed in the morn that woke","sowing his corn that kept","and the hound and the horn that belonged to"]
   end
 
   def song_phrase
-    ["","#{song_subject[0]} #{song_verbs[0]}","the rat that ate",
+    ["","#{song_subject[0]} #{song_verb[0]}","#{song_subject[1]} #{song_verb[1]}",
     "the cat that killed","the dog that worried","the cow with the crumpled horn that tossed",
     "the maiden all forlorn that milked","the man all tattered and torn that kissed",
     "the priest all shaven and shorn that married","the rooster that crowed in the morn that woke",
