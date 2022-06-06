@@ -134,5 +134,5 @@ TEXT
     expected = "Thar be the house that Jack built.\n"
     assert_equal expected, RandomPirateHouse.new.line(1)
   end
-  
+
 end
